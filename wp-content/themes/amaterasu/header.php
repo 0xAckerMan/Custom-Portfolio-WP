@@ -8,18 +8,3 @@
     <?php wp_head(); ?>
 </head>
 <body>
-
-<header>
-    <div class="header-left">
-        Joel Kores
-    </div>
-    <div class="header-right">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-</header>
-    
