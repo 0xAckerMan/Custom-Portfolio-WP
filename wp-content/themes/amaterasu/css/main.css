@@ -5,218 +5,319 @@
     --slate: #8892b0;
     --lightslate: #a8b2d1;
     --lightestslate: #ccd6f6;
+    --translightestslate: #ccd6f615;
     --white: #e6f1ff;
     --green: #64ffda;
   }
-  html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  .colors {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 5px;
-  }
-  
-  .navy,
-  .lightnavy,
-  .lightestnavy,
-  .slate,
-  .lightslate,
-  .lightestslate,
-  .white,
-  .green {
-    height: 50px;
-    width: 50px;
-  }
-  
-  .navy {
-    background-color: var(--navy);
-  }
-  
-  .lightnavy {
-    background-color: var(--lightnavy);
-  }
-  
-  .lightestnavy {
-    background-color: var(--lightest-navy);
-  }
-  
-  .slate {
-    background-color: var(--slate);
-  }
-  
-  .lightslate {
-    background-color: var(--lightestslate);
-  }
-  
-  .lightestslate {
-    background-color: var(--lightestslate);
-  }
-  
-  .white {
-    background-color: var(--white);
-    border: 1px black solid;
-  }
-  
-  .green {
-    background-color: var(--green);
-  }
-  
-  body {
-    background-color: var(--navy);
-  }
-  .container{
-    display: flex;
-    flex-direction: row;
-    width: 92%;
-    /* height: 100vh; */
-  }
-  
-  .left-container{
-    /* border: 1px solid white; */
-    width: 47%;
-    overflow: auto;
-    height: 98vh;
-    position: fixed ;
-    display: flex;
-    flex-flow: column;
-    gap: 10%;
-    justify-content: center;
-    margin-left: 8%;
-    margin-top: -2%;
-  }
-  
-  .right-container{
-    overflow: auto;
-    flex-grow: 1;
-    /* position: relative ; */
-    /* background-color: red; */
-    height: 130vh;
-    right: 0;
-    align-items: flex-end;
-    justify-content: right;
-    margin-left: 48%;
-  }
-  
-  h1,
-  h2,
-  a {
-    color: var(--white);
-  }
-  
-  p {
-    color: var(--lightslate);
-  }
-  
-  .nav {
-      list-style: none;
-      padding: 0;
-    }
-    
-    .nav li {
-      position: relative;
-      margin-bottom: 10px;
-    }
-    
-    .nav li a {
-      position: relative;
-      display: inline-block;
-      padding-left: 26px;
-      color: var(--slate);
-      text-decoration: none;
-      transition: color 0.1s ease, padding-left 0.1s ease;
-    }
-    
-    .nav li a::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 10px;
-      height: 1px;
-      background-color: var(--slate);
-      transform-origin: left center;
-      transform: scaleX(0);
-      transition: transform 0.1s ease, background-color 0.1s ease;
-    }
-    
-    .nav li a::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 20px;
-      height: 1px;
-      background-color: var(--slate);
-      transform-origin: left center;
-      transform: scaleX(1);
-      transition: transform 0.1s ease, background-color 0.1s ease;
-    }
-    
-    .nav li a.active,
-    .nav li a:hover {
-      color: var(--lightestslate);
-      padding-left: 60px;
-    }
-    
-    .nav li a.active::before,
-    .nav li a:hover::before {
-      transform: scaleX(5);
-      background-color: var(--lightestslate);
-    }
-    
-    .nav li a.active::after,
-    .nav li a:hover::after {
-      transform: scaleX(0);
-    }
-  
-  .midia{
-    display: block;
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 3rem;
-    margin: 0;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.colors {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+}
+
+.navy,
+.lightnavy,
+.lightestnavy,
+.slate,
+.lightslate,
+.lightestslate,
+.white,
+.green {
+  height: 50px;
+  width: 50px;
+}
+
+.navy {
+  background-color: var(--navy);
+}
+
+.lightnavy {
+  background-color: var(--lightnavy);
+}
+
+.lightestnavy {
+  background-color: var(--lightest-navy);
+}
+
+.slate {
+  background-color: var(--slate);
+}
+
+.lightslate {
+  background-color: var(--lightestslate);
+}
+
+.lightestslate {
+  background-color: var(--lightestslate);
+}
+
+.white {
+  background-color: var(--white);
+  border: 1px black solid;
+}
+
+.green {
+  background-color: var(--green);
+}
+
+body {
+  background-color: var(--navy);
+  /* display: flex;
+  justify-content: center; */
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  width: 92%;
+
+}
+
+.left-container {
+  width: 34.5%;
+  overflow: auto;
+  height: 98vh;
+  position: fixed ;
+  display: flex;
+  flex-flow: column;
+  gap: 10%;
+  padding-top: 2%;
+  margin-left: 6%;
+  /* border: #64ffda solid 1px; */
+}
+
+.upper{
+  display: flex;
+  gap: 10%;
+  height: 80%;
+  flex-flow: column;
+}
+
+.right-container{
+  /* overflow: auto; */
+  /* flex-grow: 1; */
+  /* height: 100vh; */
+  right: 0;
+  align-items: flex-end;
+  margin-left: 42%;
+  margin-right: -40px;
+}
+
+h1,
+h2,
+a {
+  color: var(--white);
+}
+
+h2{
+  font-size: 20px;
+}
+
+p {
+  color: var(--lightslate);
+}
+
+.nav {
+    list-style: none;
     padding: 0;
   }
-    
-  .midia a{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
   
+  .nav li {
+    position: relative;
+    margin-bottom: 10px;
+  }
   
-  
+  .nav li a {
+    position: relative;
+    display: inline-block;
+    padding-left: 26px;
     color: var(--slate);
     text-decoration: none;
+    transition: color 0.1s ease, padding-left 0.1s ease;
   }
   
-  .midia a:hover{
+  .nav li a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 10px;
+    height: 1px;
+    background-color: var(--slate);
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform 0.1s ease, background-color 0.1s ease;
+  }
+  
+  .nav li a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 1px;
+    background-color: var(--slate);
+    transform-origin: left center;
+    transform: scaleX(1);
+    transition: transform 0.1s ease, background-color 0.1s ease;
+  }
+  
+  .nav li a.active,
+  .nav li a:hover {
     color: var(--lightestslate);
+    padding-left: 60px;
   }
   
-  .midia [class*="fa-"]:hover {
-    color: var(--lightestslate);
+  .nav li a.active::before,
+  .nav li a:hover::before {
+    transform: scaleX(5);
+    background-color: var(--lightestslate);
   }
   
-  .midia [class*="fa-"] {
-    font-size: 150%;
-    color: var(--slate);
+  .nav li a.active::after,
+  .nav li a:hover::after {
+    transform: scaleX(0);
   }
+
+.socials{
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 3%;
+}
+
+.midia{
+  display: block;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+}
   
-  #aboutme{
-    height: 100vh;
-    /* border: 1px solid wheat; */
-    display: flex;
-    align-items: center;
+.midia a{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+
+
+
+  color: var(--slate);
+  text-decoration: none;
+}
+
+.midia a:hover{
+  color: var(--lightestslate);
+}
+
+.midia [class*="fa-"]:hover {
+  color: var(--lightestslate);
+}
+
+.midia [class*="fa-"] {
+  font-size: 150%;
+  color: var(--slate);
+}
+
+#aboutme{
+  height: 70vh;
+  display: flex;
+  padding-top: 5%;
+  padding-left: 20%;
+  /* border: #e6f1ff solid 1px; */
+}
+
+#experience{
+  margin-top: 2%;
+  /* border: #e6f1ff solid 1px; */
   padding-left: 10%;
-  }
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-top: 5%;
+  gap: 30px;
+}
+
+.work-card{
+  /* border: white solid 1px; */
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  /* border: #e6f1ff solid 1px; */
+  /* gap: 5%; */
+}
+
+.work-card:hover{
+  background-color: var(--translightestslate);
+}
+
+.years{
+  /* border: #64ffda solid 1px; */
+  width: 30%;
+  margin-top: 1%;
+}
+
+.work-info{
+  width: 100%;
+  right: 0;
+}
+
+.work-upper{
+  /* background-color: wheat; */
+  margin: 0;
+}
+
+.job-description{
+  /* background-color: red; */
+  margin-top: -15px;
+}
+
+.job-tech{
+  /* background-color: blue; */
+  padding: 0;
+}
+
+.job-tech ul li{
+  list-style: none;
+  background-color: var(--lightestslate);
+  padding: 1.2%;
+  margin-top: 2%;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.job-tech ul{
+  gap: 3%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: -4%;
+  margin-left: -8%;
+}
+
+.years p{
+  color: var(--slate);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.job-title h3{
+  color: var(--lightestslate);
+}
+
+
+.work-card:hover h3{
+  color: var(--green);
+}
