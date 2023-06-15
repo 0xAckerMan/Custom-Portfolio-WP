@@ -8,6 +8,7 @@
     --translightestslate: #ccd6f615;
     --white: #e6f1ff;
     --green: #64ffda;
+    --shadegreen: #64ffdb34;
   }
 html {
   box-sizing: border-box;
@@ -247,6 +248,7 @@ p {
   padding-left: 10%;
   padding-top: 5%;
   gap: 30px;
+  height: 100vh;
 }
 
 .work-card{
@@ -292,11 +294,13 @@ p {
 
 .job-tech ul li{
   list-style: none;
-  background-color: var(--lightestslate);
+  background-color: var(--shadegreen);
   padding: 1.2%;
   margin-top: 2%;
   border-radius: 10px;
   font-size: 13px;
+  font-weight: 700;
+  color: var(--green);
 }
 
 .job-tech ul{
@@ -321,3 +325,16 @@ p {
 .work-card:hover h3{
   color: var(--green);
 }
+
+#projects{
+  margin-top: 2%;
+  /* border: #e6f1ff solid 1px; */
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-top: 5%;
+  gap: 30px;
+  height: 100vh;
+}
+
