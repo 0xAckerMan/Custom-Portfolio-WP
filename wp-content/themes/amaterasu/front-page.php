@@ -8,72 +8,41 @@
         </section>
 
         <section id="experience">
-          <div class="work-card">
-            <div class="years">
-              <p>2019 - 2021</p>
-            </div>
-            <div class="work-info">
-              <div class="work-upper">
-                <div class="job-title">
-                  <h3>Software Engineer</h3>
-                </div>
-                <div class="company">
-                  <h4>The Jitu</h4>
-                </div>
+        <div class="work-card">
+              <div class="years">
+                <p>2021 - 2023</p>
               </div>
-              <div class="job-description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia blanditiis numquam aspernatur nemo, qui fugit obcaecati veritatis enim ullam! Fugiat ratione dolores nobis vel pariatur dolorum tenetur officiis, minima ab.
-                </p>
-              </div>
-              <div class="job-tech">
-                <ul>
-                  <li>PHP</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Node</li>
-                  <li>Python</li>
-                  <li>Java</li>
-                </ul>
+              <div class="work-info">
+                <div class="work-upper">
+                  <div class="job-title">
+                    <h3>Software Engineer - The Jitu</h3>
+                  </div>
+                  <!-- <div class="company">
+                    <h4>The Jitu</h4>
+                  </div> -->
+                </div>
+                <div class="job-description">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia blanditiis numquam aspernatur nemo, qui fugit obcaecati veritatis enim ullam! Fugiat ratione dolores nobis vel pariatur dolorum tenetur officiis, minima ab.
+                  </p>
+                </div>
+                <div class="job-tech">
+                  <ul>
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                  </ul>
 
-            </div>
-          </div>
-          </div>
-
-          <div class="work-card">
-            <div class="years">
-              <p>2019 - 2021</p>
-            </div>
-            <div class="work-info">
-              <div class="work-upper">
-                <div class="job-title">
-                  <h3>Software Engineer</h3>
-                </div>
-                <div class="company">
-                  <h4>The Jitu</h4>
-                </div>
               </div>
-              <div class="job-description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia blanditiis numquam aspernatur nemo, qui fugit obcaecati veritatis enim ullam! Fugiat ratione dolores nobis vel pariatur dolorum tenetur officiis, minima ab.
-                </p>
-              </div>
-              <div class="job-tech">
-                <ul>
-                  <li>PHP</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Node</li>
-                  <li>Python</li>
-                  <li>Java</li>
-                </ul>
-
             </div>
-          </div>
           </div>
 
 
           <div class="work-card">
             <div class="years">
-              <p>2019 - 2021</p>
+              <p>2021 - 2023</p>
             </div>
             <div class="work-info">
               <div class="work-upper">
@@ -104,6 +73,40 @@
         </section>
 
 
+        <section id="projects" >
+        <div class="work-card">
+              <div class="years">
+                <p>2021 - 2023</p>
+              </div>
+              <div class="work-info">
+                <div class="work-upper">
+                  <div class="job-title">
+                    <h3>Software Engineer - The Jitu</h3>
+                  </div>
+                  <!-- <div class="company">
+                    <h4>The Jitu</h4>
+                  </div> -->
+                </div>
+                <div class="job-description">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia blanditiis numquam aspernatur nemo, qui fugit obcaecati veritatis enim ullam! Fugiat ratione dolores nobis vel pariatur dolorum tenetur officiis, minima ab.
+                  </p>
+                </div>
+                <div class="job-tech">
+                  <ul>
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                  </ul>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+
 
 
         <div class="colors">
@@ -128,6 +131,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <!-- echo do_shortcode('[contact-form-7 id="17" title="Contact form 1"]'); -->
 
 
 <?php get_footer(); ?>
