@@ -26,7 +26,8 @@
           <ul class="nav">
             <li><a href="#aboutme" class="active">ABOUT</a></li>
             <li><a href="#experience">EXPERIENCE</a></li>
-            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
         </div>
