@@ -1,4 +1,6 @@
-<!-- <h4>This is the footer</h4> -->
+<section id="footer">
+  <p>Copyright Joel Kores 2023</p>
+</section>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
