@@ -48,7 +48,7 @@
             </li>
 
             <li>
-              <a href="#" target="_blank">
+              <a href="https://medium.com/@0xAckerMan" target="_blank">
                 <span class="fab fa-medium" aria-hidden="true"></span>
                 <span class="sr-only">Medium</span>
               </a>
